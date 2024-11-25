@@ -1,0 +1,98 @@
+/* styles/globals.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f8ff; /* Light blue background */
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #00ffcc; /* Aqua green color */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+footer {
+  background: #00cc99; /* Aqua green with a darker shade for footer */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.home, .about, .projects {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.projects {
+  background-color: #00ffcc; /* Aqua green background for projects section */
+}
+
+.projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects ul li {
+  background: #00cc99; /* Darker aqua green for project items */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects ul li a {
+  text-decoration: none;
+  color: #97fa46; /* Light green color for links */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}
