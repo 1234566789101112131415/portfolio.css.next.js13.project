@@ -1,0 +1,174 @@
+/* Tailwind CSS base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Container for responsive design */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(to right, #13e997, #86def7);
+  color: rgb(221, 245, 112);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.header .title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header .subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+/* Footer Styles */
+.footer {
+  background: #111;
+  color: rgb(48, 194, 19);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #0ce4e4, #5aeec9);
+  padding: 80px 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1ce6ba;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #86e619;
+  margin-bottom: 50px;
+}
+
+/* About Section */
+.about p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  text-align: center;
+  color: #86f1bf;
+}
+
+/* Projects Section */
+.projects {
+  background: #b1f3d7;
+  padding: 60px 0;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.project-card {
+  background: #e5e6e3;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #86e0cd;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #1d1d1d;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: rgb(3, 54, 83);
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #21e472;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .project-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
